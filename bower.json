@@ -1,0 +1,27 @@
+{
+  "name": "bedrock",
+  "description": "Web App Framework",
+  "main": "app/index.html",
+  "authors": [
+    "Matt Smith"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Web",
+    "App",
+    "Framework",
+    "HTML"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "modernizr": "^3.3.1"
+  }
+}

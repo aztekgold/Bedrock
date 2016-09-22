@@ -1,0 +1,15 @@
+{
+  "name": "bedrock",
+  "version": "0.1.0",
+  "description": "Web App Framework",
+  "main": "gulpfile-old.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "wiredep": "^4.0.0"
+  }
+}
