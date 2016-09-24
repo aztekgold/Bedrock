@@ -9,7 +9,12 @@
   "author": "Matt Smith",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
     "wiredep": "^4.0.0"
   }
 }
