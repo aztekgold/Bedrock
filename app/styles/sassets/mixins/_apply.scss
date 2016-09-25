@@ -1,0 +1,9 @@
+@mixin apply-x ($property, $value) {
+    #{$property}-left: $value;
+    #{$property}-right: $value;
+}
+
+@mixin apply-y ($property, $value) {
+    #{$property}-top: $value;
+    #{$property}-bottom: $value;
+}
