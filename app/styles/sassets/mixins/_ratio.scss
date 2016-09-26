@@ -1,0 +1,28 @@
+*[class^='ratio-']{
+  position: relative;
+  overflow: hidden;
+  &::after{
+    content: " ";
+    display: block;
+  }
+  &>*{
+    position: absolute !important;
+  }
+}
+
+@mixin ratio($a,$b){
+  .ratio-#{$a}x#{$b}::after{padding-top: $b * (100% / $a);}
+}
+
+/*
+Usage
+
+@include ratio(16,9);
+/*
+
+Output
+
+.ratio-16x9::after{
+  padding-top: 56.25%
+}
+*/

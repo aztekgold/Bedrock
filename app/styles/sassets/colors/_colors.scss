@@ -1,0 +1,78 @@
+// Social Media Colors
+@import '_social';
+
+$color--turqoize: #1abc9c;
+$color--green-sea: #16a085;
+$color--pea-green: #3ce78b;
+$color--emerald: #2ecc71;
+$color--nephritis: #27ae60;
+$color--peter-river: #3498db;
+$color--belize-hole: #2980b9;
+$color--amythyst: #9b59b6;
+$color--wisteria: #8e44ad;
+$color--wet-asphalt: #34495e;
+$color--midnight-blue: #2c3e50;
+$color--sun-flower: #f1c40f;
+$color--orange: #f39c12;
+$color--carrot: #f39c12;
+$color--pumpkin: #d35400;
+$color--alizarin: #e74c3c;
+$color--pomegranate: #c0392b;
+$color--clouds: #ecf0f1;
+$color--silver: #bdc3c7;
+$color--comncrete: #95a5a6;
+$color--asbestos: #7f8c8d;
+
+// Shades
+$color--jet: #131516;
+$color--raven: #373d3f;
+$color--asher: #555f61;
+$color--stone: #707c80;
+$color--gray: #8c979a;
+$color--sterling: #a7b0b2;
+$color--heather: #c1c7c9;
+$color--pearl: #dadedf;
+$color--lilia: #f2f3f4;
+
+// Flat colors main
+$color--blue-flat: $color--peter-river;
+$color--purple-flat: $color--amythyst;
+$color--red-flat: $color--alizarin;
+$color--green-flat: $color--emerald;
+$color--orange-flat: $color--carrot;
+
+
+// Palettes Function
+
+/*
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+*/
+
+// Usage
+
+/*
+$palettes: (
+    green: (
+      base: \$nephritis,
+      light: \$emerald,
+      lighter: \$pea-green
+    ),
+    purple: (
+        base:   \$wisteria,
+        light:  \$amythyst
+    )
+);
+
+.element{
+  color: pallete(\green, light);
+}
+*/
+
+// Notes
+/*
+16/09/16
+- Dropped from flow
+Pallet function not picked up by *Pigments plugin https://atom.io/packages/pigments
+*/
