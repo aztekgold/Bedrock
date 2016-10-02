@@ -1,0 +1,36 @@
+@mixin apply-x ($property, $left, $right: $left){
+  #{$property}-left: $left;
+  #{$property}-right: $right;
+}
+
+@mixin apply-y ($property, $top, $bottom: $top){
+  #{$property}-top: $top;
+  #{$property}-bottom: $bottom;
+}
+
+// Margin
+@mixin margin-x($left, $right: $left){
+  @include apply-x(margin, $left, $right);
+}
+
+@mixin margin-y($top, $bottom: $top){
+  @include apply-y(margin, $top, $bottom);
+}
+
+// Padding
+@mixin padding-x($left, $right: $left){
+  @include apply-x(padding, $left, $right);
+}
+
+@mixin padding-y($top, $bottom: $top){
+  @include apply-y(padding, $top, $bottom);
+}
+
+// Border
+@mixin border-x($left, $right: $left){
+  @include apply-x(border, $left, $right);
+}
+
+@mixin border-y($top, $bottom: $top){
+  @include apply-y(border, $top, $bottom);
+}

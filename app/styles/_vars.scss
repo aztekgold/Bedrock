@@ -1,0 +1,53 @@
+// Media Query Breakpoints
+$columns: 12 !default;
+// $gutter: 1.875em !default;
+$gutter: 1em !default;
+$push-pull-class: true;
+$line--color: rgba(0,0,0,0.10);
+$dark-line--color:rgba(255,255,255,0.25);
+$dash-line--color: rgba(0,0,0,0.20);
+$main-radius: 3px;
+
+$breakpoints: (
+    xs: 0,
+    sm: 34em,
+    md: 48em,
+    lg: 62em,
+    xl: 75em
+);
+
+$body-font-size: (
+    xs: 12px,
+    sm: 13px,
+    md: 14px,
+    lg: 15px,
+    xl: 16px
+);
+
+//Variables
+$main-body-font: 'Open Sans';
+$main-font-color: #444444;
+$main-link-color: #777777;
+$bg-color-main: #e2e2e2;
+$bg-color-inverse: #232323; //#343434
+
+//Colors
+$color--dark-main: #333333;
+
+// Padding y-axis
+$py-xs: 20px;
+$py-sm: 40px;
+$py-md: 80px;
+$py-lg: 100px;
+$py-xl: 160px;
+// ![Find better solution]
+
+//animtions
+$bounce_animations: false;
+$fade_animations:   false;
+$flip_animations:   false;
+$roll_animations:   false;
+$rotate_animations: false;
+$slide_animations:  false;
+$speed_animations:  false;
+$other_animations:  false;

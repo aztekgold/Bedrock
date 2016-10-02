@@ -1,0 +1,80 @@
+// _grid.scss
+$col-width: 100% / $columns;
+
+.container,
+.container-fluid,
+.row{
+    @include clearfix;
+}
+
+.container, .container-fluid {
+  @include padding-x($gutter / 2);
+  @include margin-x(auto);
+}
+
+@each $breakpoint, $breakpoint-size in $breakpoints {
+    @media (min-width: $breakpoint-size){
+        .container{
+            // Some Maths Magic to Calculate Width Based on Breakpoint Size
+            width: $breakpoint-size - $gutter;
+        }
+    }
+}
+
+.row {
+  margin-left: -$gutter;
+}
+
+%col{
+    display: block;
+    position: relative;
+    padding-left: $gutter;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+
+@each $breakpoint, $breakpoint-size in $breakpoints {
+    /* Breakpoint #{$breakpoint} */
+    @for $i from 1 through $columns {
+        .g#{$i}-#{$breakpoint}{
+            @extend %col;
+        }
+    }
+
+    // @media (min-width: $breakpoint-size){
+    @include breakpoint-up($breakpoint-size){
+         // Work around cross-media @extend (https://github.com/sass/sass/issues/1050)
+        %float-#{$breakpoint} {
+            float: left;
+        }
+        // Grid
+        @for $i from 1 through $columns {
+            .g#{$i}-#{$breakpoint}{
+                width: $col-width * $i;
+                @extend %float-#{$breakpoint};
+            }
+        }
+        // Offset
+        @for $i from 1 through $columns {
+            .offset-#{$i}-#{$breakpoint}{
+                margin-left: $col-width * $i;
+            }
+        }
+
+        @if ($push-pull-class){
+            // Push
+            @for $i from 1 through $columns {
+                .push-#{$i}-#{$breakpoint}{
+                    left: $col-width * $i;
+                }
+            }
+            // Pull
+            @for $i from 1 through $columns {
+                .pull-#{$i}-#{$breakpoint}{
+                    left: -$col-width * $i;
+                }
+            }
+
+        }
+    }
+}

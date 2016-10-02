@@ -1,0 +1,26 @@
+@import 'sassets/buttons/_underground.scss';
+
+%btn{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+}
+
+.btn-main{
+    @extend %btn;
+    @include btn-underground;
+}
+
+
+.dark .btn-main{
+    @include btn-underground(#fff);
+}
+
+.btn-hollow{
+    @extend %btn;
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: $main-radius;
+}

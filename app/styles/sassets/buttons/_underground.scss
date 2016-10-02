@@ -1,0 +1,29 @@
+@mixin btn-underground($hover-color: #444){
+    color: $hover-color;
+    &::before,&::after{
+        display: block;
+        content: '';
+        width: 0;
+        border-bottom: 2px solid $hover-color;
+        position: absolute;
+        bottom: 0;
+    }
+    &::before{left: 0;}
+    &::after{
+        right: 0;
+        transition: width .25s $easing--easeInOutExpo;
+    }
+    &:hover{
+        &::before,&::after{
+            width: 100%;
+        }
+        &::before{
+            transition: width .25s $easing--easeInOutExpo;
+            transition-delay: 0s;
+        }
+        &::after{
+            transition: width .25s $easing--easeInOutExpo;
+            transition-delay: .25s;
+        }
+    }
+}
