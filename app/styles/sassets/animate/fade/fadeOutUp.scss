@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes fadeOutUp {
   0% {
     opacity: 1;
@@ -26,3 +27,33 @@
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
 }
+=======
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10

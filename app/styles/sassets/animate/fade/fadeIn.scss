@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -22,3 +23,29 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+=======
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10

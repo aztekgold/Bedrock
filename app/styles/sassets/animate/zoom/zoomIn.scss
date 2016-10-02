@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
@@ -26,3 +27,33 @@
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
+=======
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10

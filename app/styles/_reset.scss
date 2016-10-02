@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Reset
 
 // Reset.scss updated 1.05.16
@@ -244,4 +245,10 @@ th {
   h3 {
     page-break-after: avoid;
   }
+=======
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
@@ -22,3 +23,29 @@
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
+=======
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes slideOutDown {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -28,3 +29,35 @@
   -webkit-animation-name: slideOutDown;
   animation-name: slideOutDown;
 }
+=======
+@-webkit-keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10

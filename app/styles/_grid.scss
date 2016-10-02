@@ -15,7 +15,6 @@ $col-width: 100% / $columns;
 @each $breakpoint, $breakpoint-size in $breakpoints {
     @media (min-width: $breakpoint-size){
         .container{
-            // Some Maths Magic to Calculate Width Based on Breakpoint Size
             width: $breakpoint-size - $gutter;
         }
     }

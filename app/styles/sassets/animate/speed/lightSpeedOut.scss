@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes lightSpeedOut {
   0% {
     opacity: 1;
@@ -28,3 +29,35 @@
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
+=======
+@-webkit-keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+>>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10
