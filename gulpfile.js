@@ -32,12 +32,9 @@ gulp.task('scripts', function(){
     .pipe(uglify())
     .pipe(gulp.dest('./public/scripts/'))
 })
-<<<<<<< HEAD
 
 gulp.task('imagemin', function(){
     gulp.src('src/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
 });
-=======
->>>>>>> 97e09b18ba06d4b387d29e6a1593f30d9aeb8f10
