@@ -9,4 +9,14 @@
     background-color: $accent-color;
     color: #fff;
   }
+  @at-root{
+    .dark &{
+      border: 1px solid $hover-color;
+      color: $hover-color;
+      &:hover{
+        background-color: $hover-color;
+        color: #444;
+      }
+    }
+  }
 }

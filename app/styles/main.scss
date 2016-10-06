@@ -1,5 +1,6 @@
 @import '_vars';
 @import 'sassets/animate/easing';
+@import 'sassets/colors/colors';
 
 
 @import '_mixins';
@@ -12,4 +13,15 @@
 
 .hello{
     color: red;
+}
+
+@include ratio(1,1);
+@include ratio(2,1);
+
+.bg-blue{
+  background-color: $color--peter-river;
+}
+
+.bg-green{
+  background-color: $color--green-flat;
 }

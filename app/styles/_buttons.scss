@@ -1,3 +1,4 @@
+@import 'sassets/buttons/hollow';
 
 %btn{
     position: relative;
@@ -5,4 +6,10 @@
     cursor: pointer;
     text-decoration: none;
     user-select: none;
+    padding: 0 20px;
+    line-height: 35px;
+}
+
+.btn-hollow{
+  @include btn-hollow(#0af);
 }

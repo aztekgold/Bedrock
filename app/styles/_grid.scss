@@ -8,7 +8,7 @@ $col-width: 100% / $columns;
 }
 
 .container, .container-fluid {
-  @include padding-x($gutter / 2);
+  @include padding-x($gutter);
   @include margin-x(auto);
 }
 
