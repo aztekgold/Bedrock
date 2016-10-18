@@ -1,15 +1,28 @@
 @import 'sassets/buttons/hollow';
+@import 'sassets/buttons/pill';
+@import 'sassets/animate/easing';
 
 %btn{
     position: relative;
     display: inline-block;
     cursor: pointer;
+    border: 0;
     text-decoration: none;
     user-select: none;
-    padding: 0 20px;
-    line-height: 35px;
+    text-align: center;
+    padding: 0 25px;
+    line-height: 40px;
 }
 
 .btn-hollow{
-  @include btn-hollow(#0af);
+  @include btn-hollow(rgb(223, 79, 79));
+}
+
+.btn-pill{
+  @include btn-pill(#0af)
+}
+
+.button{
+  transition: all .4s $easing--easeInOutExpo;
+  color: $color--facebook-blue-base;
 }

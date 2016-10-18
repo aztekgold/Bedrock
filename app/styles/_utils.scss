@@ -198,7 +198,8 @@ img.inline, .inline { display:inline-block; }
   .my#{$i}{@include padding-y(10px * $i);}
 }
 
-.light-mask::after{
+.light-mask::after,
+.dark-mask::after{
     position: absolute;
     top: 0;
     right: 0;
@@ -206,11 +207,12 @@ img.inline, .inline { display:inline-block; }
     width: 100%;
     height: 100%;
     content: "";
-    background-color: #c3c7cb;
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 0.6;
 }
+
+.light-mask::after{    background-color: #c3c7cb;}
+.dark-mask::after{    background-color: rgb(73, 73, 73);}
 
 .full-width{width: 100%;}
 .full-height{height: 100%;}

@@ -1,0 +1,205 @@
+div[class*="ctrl-"]{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+  width: 100%;
+  input{
+    &:focus{
+      outline: none;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"],
+  select, textarea{
+    display: block;
+    box-sizing: border-box;
+    font-family: inherit;
+    width: 100%;
+    background-color: transparent;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"],{
+    line-height: 40px;
+    height: 40px;
+    padding: 0 8px;
+    // Remove Ugly Autofill Background Color
+    // box-shadow: inset 0 0 0px 9999px white;
+  }
+  select{
+    height: 40px;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+  }
+  textarea{
+    padding: 8px;
+    resize: vertical;
+  }
+  label{
+    line-height: 40px;
+  }
+}
+
+.ctrl-radio,
+.ctrl-checkbox{
+  display: block;
+  user-select: none;
+}
+
+.ctrl-sm,
+.ctrl-md,
+.ctrl-lg{
+  max-width: 100%;
+  display: inline-block;
+  clear: both;
+}
+
+.ctrl-sm{ min-width: 150px; }
+.ctrl-md{ min-width: 350px; }
+.ctrl-lg{ min-width: 500px; }
+
+.ctrl-checkbox{
+  font-family: 'icomoon';
+}
+.ctrl-checkbox{
+  display: block;
+  position: relative;
+  line-height: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ctrl-checkbox input{
+  // display: none;
+  clip: rect(0px,0px,0px,0px);
+  width: 30px;
+  /*vertical-align: middle;*/
+  margin-right: 15px;
+}
+
+.ctrl-checkbox input::before{
+  font-family: 'icomoon';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '\e046';
+  height: 30px;
+  font-size: 2em;
+  width: 30px;
+  // background-color: #fff;
+  appearance: none;
+}
+
+.ctrl-checkbox input:checked::before{
+  content: '\e045';
+}
+
+// Theme Styling
+// .ctrl-text,
+// .ctrl-email,
+// .ctrl-password,
+// .ctrl-number,
+// .ctrl-tel,
+// .ctrl-date,
+// .ctrl-select,
+// .ctrl-textarea{
+//   border: 1px solid #000;
+//   label{
+//     text-transform: uppercase;
+//     display: block;
+//     padding: 8px 8px 0px;
+//     font-weight: 700;
+//     line-height: 1;
+//     font-size: 0.65em;
+//     letter-spacing: 2px;
+//   }
+//   input{
+//     &:focus{
+//       outline: 0;
+//     }
+//   }
+// }
+//
+// .ctrl-select select{
+//   outline: none;
+//   background-color: transparent;
+// }
+//
+// //
+//
+// .ctrl-checkbox input[type="checkbox"],
+// .ctrl-radio input[type="radio"]{
+//   display: none; // Look into clip rect
+// }
+//
+// .ctrl-checkbox .ctrl-indicator,
+// .ctrl-radio .ctrl-indicator{
+//   display: inline-block;
+//   vertical-align: middle;
+//   border: 1px solid #000;
+//   height: 30px;
+//   width: 30px;
+//   margin-right: 20px;
+//   cursor: pointer;
+// }
+//
+// .ctrl-radio .ctrl-indicator::before,
+// .ctrl-checkbox .ctrl-indicator::before{
+//   display: block;
+//   content: '';
+//   height: 0;
+//   width: 0;
+//   margin: 15px;
+//   transition: all .2s ease;
+// }
+//
+// .ctrl-radio input[type="radio"]:checked ~ .ctrl-indicator::before,
+// .ctrl-checkbox input[type="checkbox"]:checked ~ .ctrl-indicator::before{
+//   background: #e8644d;
+//   height: 22px;
+//   width: 22px;
+//   margin: 4px;
+// }
+//
+// .ctrl-checkbox span{
+//   line-height: 32px;
+//   margin-left: 30px;
+//   display: inline-block;
+// }
+//
+// .ctrl-radio .ctrl-indicator,
+// .ctrl-radio .ctrl-indicator::before{
+//   border-radius: 50%;
+// }
+
+
+//Theme Styling 2
+.ctrl-text,
+.ctrl-email,
+.ctrl-password,
+.ctrl-number,
+.ctrl-tel,
+.ctrl-date,
+.ctrl-select,
+.ctrl-textarea{
+  label{
+
+  }
+  input{
+
+  border: 2px solid #000;
+
+    &:focus{
+
+    }
+  }
+}

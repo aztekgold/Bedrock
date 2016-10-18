@@ -1,0 +1,25 @@
+@mixin btn-pill($accent-color: #0af, $border-radius: 3px, $hover-color: #fff){
+  @extend %btn;
+  background: $accent-color;
+  border-radius: 20px; // half line-height
+  color: #fff;
+  // transition: all .2s ease;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8em;
+  width: 100%;
+  &:hover{
+    background-color: $accent-color;
+    color: #fff;
+  }
+  @at-root{
+    .dark &{
+      color: $accent-color;
+      background-color: #fff;
+      &:hover{
+        background-color: $hover-color;
+        color: #444;
+      }
+    }
+  }
+}
