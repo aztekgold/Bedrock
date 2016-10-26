@@ -6,85 +6,29 @@
     <link rel="stylesheet" href="styles/css/main.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
-      <form class="" action="index.html" method="post">
-        <div class="row">
-          <div class="g6-md">
 
-            <div for="" class="ctrl-text">
-              <input type="text" name="name" value="">
-              <label>First Name</label>
-            </div>
-
-            <div for="" class="ctrl-text">
-              <input type="text" name="name" value="">
-              <label>Last Name</label>
-            </div>
-
-            <div class="ctrl-selecta">
-              <label for="">Title</label>
-              <select>
-                <option value="">Mr</option>
-                <option value="">Miss</option>
-                <option value="">Mrs</option>
-                <option value="">Ms</option>
-                <option value="">Dr</option>
-              </select>
-            </div>
-
-            <label class="ctrl-checkbox">
-              <input type="checkbox">
-              I Agree to the Terms &amp; Conditions
-            </label>
-          </div>
-        </div>
-      </form>
-
-
+  <section>
+    <div class="container py10">
+      <h1 class="first">James and the Giant peach</h1>
+      <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum.</p>
+      <a href="" class="btn btn-hollow">Shop Now</a>
     </div>
+  </section>
 
-    <section class="dark py10" style="background-color: #999;">
-      <div class="container">
-        <h1 class="other line-bottom">Hello World</h1>
-      </div>
-    </section>
-    <script>
+  <div class="container py10">
+    <h2 class="first">Is James' Peach really that giant?</h2>
+    <p class="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum. onsectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum.</p>
+    <a href="" class="btn btn-hollow">Shop Now</a>
+  </div>
 
-			(function() {
-				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-				if (!String.prototype.trim) {
-					(function() {
-						// Make sure we trim BOM and NBSP
-						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-						String.prototype.trim = function() {
-							return this.replace(rtrim, '');
-						};
-					})();
-				}
+  <div class="container py10">
+    <h3 class="first">Is James' Peach really that giant?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum. onsectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum.</p>
+    <p>Earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum. onsectetur adipisicing elit. Hic quisquam, beatae porro modi excepturi incidunt ratione fuga! Eaque earum ut a commodi provident fugit praesentium, fugiat suscipit ratione, autem dolorum.</p>
+    <img src="http://i1.kym-cdn.com/photos/images/original/000/738/154/afa.jpg" alt="" class="img-responsive">
+    <a href="" class="btn btn-hollow">Shop Now</a>
+  </div>
+</section>
 
-				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
-					// in case the input is already filled..
-					if( inputEl.value.trim() !== '' ) {
-						classie.add( inputEl.parentNode, 'input--filled' );
-					}
-
-					// events:
-					inputEl.addEventListener( 'focus', onInputFocus );
-					inputEl.addEventListener( 'blur', onInputBlur );
-				} );
-
-				function onInputFocus( ev ) {
-					classie.add( ev.target.parentNode, 'input--filled' );
-				}
-
-				function onInputBlur( ev ) {
-					if( ev.target.value.trim() === '' ) {
-						classie.remove( ev.target.parentNode, 'input--filled' );
-					}
-				}
-			})();
-
-    </script>
   </body>
 </html>

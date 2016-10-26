@@ -1,16 +1,43 @@
+body{
+  line-height: 1;
+}
+
 h1,h2,h3{
+  font-family: 'Poppins';
   font-weight: bold;
   margin-top: 0;
 }
 
 h1{
-  font-size: 4em;
+  font-size: 88px;
+  font-size: 5.5rem;
+  max-width: 850px
 }
 
 h2{
-  font-size: 2.4em;
+  font-size: 56px;
+  font-size: 3.5rem;
 }
 
 h3{
-  font-size: 2em;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+h1,h2,h3,h4,p{
+  margin: 24px 0;
+}
+
+p{
+  font-size: 1.125rem;
+  color: rgba(0,0,0,0.8);
+  line-height: 1.65;
+}
+
+h1.last, h2.last, h3.last, h4.last, p.last{
+  margin-bottom: 0 !important;
+}
+
+h1.first, h2.first, h3.first, h4.first, p.first{
+  margin-top: 0 !important;
 }
